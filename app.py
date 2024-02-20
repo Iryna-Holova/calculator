@@ -26,7 +26,10 @@ def print_result(action, a, b):
         case 'multiply':
             print(f'{a} * {b} = {multiply_numbers(a, b)}')
         case 'divide':
-            print(f'{a} / {b} = {divide_numbers(a, b)}')
+            if b == 0:
+                print('Division by zero is not allowed')
+            else:
+                print(f'{a} / {b} = {divide_numbers(a, b)}')
         case _:
             print(f'Unknown action "{action}"')
 
