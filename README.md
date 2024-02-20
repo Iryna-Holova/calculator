@@ -46,4 +46,4 @@ python calculator.py divide 15 3
 ## Notes
 
 - Make sure to provide valid numbers as input. Non-numeric inputs will result in an error.
-- Division by zero is not allowed and will result in an error.
+- `python app.py -h`, `python app.py --help` to show help message
