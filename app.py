@@ -35,8 +35,14 @@ def print_result(action, a, b):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog='Simple calculator', description='A CLI to add, subtract, multiply or divide two numbers.')
-    parser.add_argument('action', type=str, help='One of: add, subtract, multiply, divide')
+    parser = argparse.ArgumentParser(
+        prog='Simple calculator',
+        description='A CLI to add, subtract, multiply or divide two numbers.'
+    )
+    parser.add_argument(
+        'action', type=str,
+        help='One of: add, subtract, multiply, divide'
+    )
     parser.add_argument('a', type=float, help='First number')
     parser.add_argument('b', type=float, help='Second number')
     args = parser.parse_args()
