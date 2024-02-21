@@ -40,7 +40,8 @@ if __name__ == "__main__":
         description='A CLI to add, subtract, multiply or divide two numbers.'
     )
     parser.add_argument(
-        'action', type=str,
+        'action',
+        type=str,
         help='One of: add, subtract, multiply, divide'
     )
     parser.add_argument('a', type=float, help='First number')
